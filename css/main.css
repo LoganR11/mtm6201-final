@@ -1,0 +1,79 @@
+:root {
+  --primary: #e60023;
+  --black: #000;
+  --white: #fff;
+}
+
+body {
+  font-family: Arial, sans-serif;
+  background: var(--white);
+  color: var(--black);
+}
+
+/* Navbar */
+.navbar {
+  border-bottom: 2px solid #ccc;
+}
+
+.navbar-brand img {
+  height: 50px;
+}
+
+/* Hero */
+.hero {
+  position: relative;
+}
+
+.hero img {
+  width: 100%;
+  opacity: 0.4;
+}
+
+.hero-text {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+}
+
+/* Sections */
+.section {
+  padding: 60px 0;
+}
+
+/* Forms */
+form {
+  max-width: 600px;
+  margin: auto;
+}
+
+input, textarea {
+  border: 1px solid black;
+}
+
+/* Buttons */
+.btn-primary {
+  background-color: var(--primary);
+  border: none;
+  width: 100%;
+}
+
+/* Footer */
+footer {
+  background: black;
+  color: white;
+}
+
+/* Tablet */
+@media (max-width: 992px) {
+  .hero-text h2 {
+    font-size: 22px;
+  }
+}
+
+/* Mobile */
+@media (max-width: 576px) {
+  .hero-text h2 {
+    font-size: 18px;
+  }
+}
